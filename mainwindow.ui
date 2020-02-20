@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1133</width>
+    <height>903</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QCheckBox" name="checkBoxCreateFeaturesBat">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>290</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Features Bat</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditROIFolder">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>70</y>
+      <width>601</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:/NormPaperV03/Brodatz/Roi</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditBatFolder">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>260</y>
+      <width>601</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:/NormPaperV03/Brodatz</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelOptionsFilePattern">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>390</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Options File pattern</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpenClassyfiersOptionsFile">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>190</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Class. Opt. File</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditOptionsFilePattern">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>410</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.+.txt</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditROITrainFiles">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>440</y>
+      <width>251</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditClassyfiersOptionsFile">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>190</y>
+      <width>601</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:/NormPaperV03/ClassOptions.txt</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxCreateTrainingBat">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>310</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Training Bat</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonUpenImageFolder">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Image Folder</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpenPredictorOutputFolder">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Pred. Out Folder</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditOutBat">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>640</y>
+      <width>61</width>
+      <height>70</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpenClassyfiersFolder">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>160</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Classyfiers Folder</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditOutFilePrefix">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Brodatz_</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpenRoiFolder">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open ROI Folder</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelOutFilePrefix">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Out File Prefix</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditImageFiles">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>440</y>
+      <width>251</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpenBatFolder">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>OpenBatFolder</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpenOptionsFolder">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Options Folder</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelFeatureFamily">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Feature Family</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditImageFilePattern">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>410</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.+.tiff</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditOptionsFolder">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>100</y>
+      <width>601</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:/NormPaperV03/Opt</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPredictorOutputFolder">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>220</y>
+      <width>601</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:/NormPaperV03/Brodatz/PredictOut</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditROITrainFilePattern">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>410</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.+Cnt13.roi</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxCreatePredictorBat">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>330</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Predictor Bat</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditImageFolder">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>40</y>
+      <width>601</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:/NormPaperV03/Brodatz/Images</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditBatFileName">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>310</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Brodatz_</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelImageFilePattern">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>390</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Image File pattern</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditClassyfiersFolder">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>160</y>
+      <width>601</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:/NormPaperV03/Brodatz/Classyfier</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelBatFileName">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>290</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bat File Name</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpenQMaZdaFolder">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open QMaZda Folder</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditImageClass">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>360</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Orginal</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonOpenMzFeaturesOutFolder">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Mz Feat. Out Folder</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelImageDistortion">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>340</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Image class</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonReload">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>360</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Reload</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditMaZdaFolder">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>601</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:/QMaZda19_08_beta</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditMzFeaturesOutFolder">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>130</y>
+      <width>601</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>H:/NormPaperV03/Brodatz/Features</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditOptionsFiles">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>440</y>
+      <width>251</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditFeatureFamily">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>360</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Gabor</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxUseSubfolders">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>360</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Use Subfolders</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelROITrainFilePattern">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>390</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Train ROI File pattern</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonCreateBatFile">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>310</y>
+      <width>101</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create *.bat file</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonClearOut">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>310</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Clear Out</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditOut">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>650</y>
+      <width>1001</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidgetImageSubfolders">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>10</y>
+      <width>271</width>
+      <height>351</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEditROITestFiles">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>440</y>
+      <width>251</width>
+      <height>191</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditROITestFilePattern">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>410</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.+Cnt51.roi</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelROITestFilePattern">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>390</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Train ROI File pattern</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxCommonTrainAdTest">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>340</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Common Train and Test</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxCreateClassyfierReductorBat">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>350</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Create Classyfier Reductor Bat</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1133</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
